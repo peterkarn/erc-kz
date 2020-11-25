@@ -1601,6 +1601,57 @@ body.touch .arrow {
   transition: all 1s;
 }
 
+.aboutus__text {
+  margin-bottom: 3.00146vw;
+}
+
+.social-secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.31772vw;
+}
+
+.social-secondary__text {
+  margin-right: 6.44217vw;
+}
+
+.social-secondary__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-secondary__item {
+  margin-right: 2.92826vw;
+  padding-left: 2.92826vw;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.social-secondary__item:hover {
+  text-decoration: underline;
+}
+
+.social-secondary__item:last-child {
+  margin-right: 0;
+}
+
+.social-secondary__item_vk {
+  background-image: url("../img/icons/vk-blue.svg");
+}
+
+.social-secondary__item_ok {
+  background-image: url("../img/icons/ok-blue.svg");
+}
+
+.social-secondary__item_ig {
+  background-image: url("../img/icons/ig-blue.svg");
+}
+
 .modal {
   padding: 2em;
 }
@@ -2231,6 +2282,24 @@ body.touch .arrow {
     margin-bottom: 20px;
   }
 
+  .aboutus__text {
+    margin-bottom: 41px;
+  }
+
+  .social-secondary {
+    font-size: 18px;
+  }
+
+  .social-secondary__text {
+    margin-right: 88px;
+    font-size: 18px;
+  }
+
+  .social-secondary__item {
+    margin-right: 40px;
+    padding-left: 40px;
+  }
+
   .modal-window {
     max-width: 345px;
   }
@@ -2832,6 +2901,40 @@ body.touch .arrow {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+  }
+
+  .aboutus__text {
+    margin-bottom: 10.66667vmin;
+  }
+
+  .social-secondary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    font-size: 4.8vmin;
+  }
+
+  .social-secondary__text {
+    margin-right: 0;
+    margin-bottom: 5.6vmin;
+    font-size: 4.8vmin;
+  }
+
+  .social-secondary__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .social-secondary__item {
+    margin-right: 0;
+    margin-bottom: 4vmin;
+    padding-left: 10.66667vmin;
   }
 
   .modal-window {

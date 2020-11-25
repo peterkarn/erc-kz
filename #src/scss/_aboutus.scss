@@ -1,0 +1,183 @@
+.aboutus {
+
+  // .aboutus__text
+
+  &__text {
+    margin-bottom: vw(41);
+
+    @media screen and (min-width: $large) {
+      margin-bottom: 41px;
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-bottom: vmin(40);
+    }
+  }
+}
+
+.page-section {}
+
+.container {}
+
+.section-title {}
+
+.title-slim {}
+
+.contacts {
+
+  // .contacts_aboutus
+
+  &_aboutus {}
+
+  // .contacts__inner
+
+  &__inner {}
+
+  // .contacts__col
+
+  &__col {}
+
+  // .contacts__line
+
+  &__line {}
+
+  // .contacts__descr
+
+  &__descr {}
+
+  // .contacts__btns
+
+  &__btns {}
+
+  // .contacts__map
+
+  &__map {}
+}
+
+.btns {
+
+  // .btns__item
+
+  &__item {
+
+    // .btns__item_whatsapp
+
+    &_whatsapp {}
+
+    // .btns__item_telegram
+
+    &_telegram {}
+
+    // .btns__item_mail
+
+    &_mail {}
+  }
+
+  // .btns__text
+
+  &__text {}
+
+  // .btns__icon
+
+  &__icon {}
+}
+
+.map {}
+
+
+.aboutus {
+
+  // .aboutus__social
+
+  &__social {}
+}
+
+.social-secondary {
+  display: flex;
+  font-size: vw(18);
+
+  @media screen and (min-width: $large) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $medium) {
+    flex-flow: column;
+    font-size: vmin(18);
+  }
+
+  // .social-secondary__text
+
+  &__text {
+    margin-right: vw(88);
+
+
+    @media screen and (min-width: $large) {
+      margin-right: 88px;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-right: 0;
+      margin-bottom: vmin(21);
+      font-size: vmin(18);
+    }
+  }
+
+  // .social-secondary__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $medium) {
+      flex-flow: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .social-secondary__item
+
+  &__item {
+    margin-right: vw(40);
+    padding-left: vw(40);
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: $large) {
+      margin-right: 40px;
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-right: 0;
+      margin-bottom: vmin(15);
+      padding-left: vmin(40);
+    }
+
+    // .social-secondary__item_vk
+
+    &_vk {
+      background-image: url("../img/icons/vk-blue.svg");
+    }
+
+    // .social-secondary__item_ok
+
+    &_ok {
+      background-image: url("../img/icons/ok-blue.svg");
+    }
+
+    // .social-secondary__item_ig
+
+    &_ig {
+      background-image: url("../img/icons/ig-blue.svg");
+    }
+  }
+}
