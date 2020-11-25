@@ -1,0 +1,156 @@
+.departaments {
+
+  // .departaments__inner
+
+  &__inner {
+    display: grid;
+    column-gap: vw(20);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: vw(41);
+
+    @media screen and (min-width: $large) {
+      column-gap: 20px;
+      row-gap: 41px;
+    }
+
+    @media screen and (max-width: $medium) {
+      grid-template-columns: auto;
+      row-gap: vmin(28);
+    }
+  }
+
+  // .departaments__item
+
+  &__item {}
+
+  // .departaments__descr
+
+
+}
+
+.departament {
+  font-size: vw(18);
+
+
+  @media screen and (min-width: $large) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: vmin(18);
+  }
+
+  // .departament__topline
+
+  &__topline {
+    display: flex;
+    flex-wrap: wrap;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // .departament__title
+
+  &__title {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      margin: 0 0.5em 0 0.2em;
+      width: 0.8em;
+      height: 0.8em;
+      background-image: url("../img/icons/ext-link.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // .departament__label
+
+  &__label {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 0.2em 0.9em;
+    max-width: vw(150);
+    font-size: vw(14);
+    color: #fff;
+
+    @media screen and (min-width: $large) {
+      max-width: 150px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: $medium) {
+      max-width: vmin(150);
+      font-size: vmin(14);
+    }
+
+  }
+
+  &__descr {
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+
+  &__topline.opened {
+    .departament__title {
+      color: $main-b;
+
+      &:after {
+        background-image: url("../img/icons/ext-link-b.svg");
+      }
+    }
+
+    .departament__label {
+      background-color: $sec-gr;
+    }
+  }
+
+  &__topline.closed {
+
+    .departament__label {
+      background-color: $sec-y;
+    }
+  }
+}
+
+.location {
+  margin-bottom: vw(50);
+
+  @media screen and (min-width: $large) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: $medium) {
+    margin-bottom: vmin(50);
+  }
+
+
+  // .location__map
+
+  &__map {
+    width: 100%;
+    height: vw(319);
+
+    @media screen and (min-width: $large) {
+      height: 319px;
+    }
+
+    @media screen and (max-width: $medium) {
+      height: vmin(171);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

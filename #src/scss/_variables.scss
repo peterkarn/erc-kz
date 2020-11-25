@@ -1,0 +1,33 @@
+// $maxWidth: _______;
+
+// @mixin adaptive-font($pcSize, $mobSize) {
+// 	$addSize: $pcSize - $mobSize;
+// 	$maxWidth: $maxWidth - 320;
+// 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+// }
+
+// если используем сетку лаврика - проверь, совпадают ли брейкпоинты и переменные
+$large: 1367px;
+$medium: 1024px;
+
+// colors
+
+$main-b: #1171c2;
+$main-o: #ffa500;
+$main-g: #fafafa;
+$main-d: #090909;
+$sec-r: #eb2020;
+$sec-gr: #02d356;
+$sec-y: #f2bf19;
+$sec-g: #f9f9f9;
+$sec-db: #0c5593;
+
+// functions
+
+@function vw($value, $base: 1366) {
+  @return $value / $base * 100vw;
+}
+
+@function vmin($value, $base: 375) {
+  @return $value / $base * 100vmin;
+}

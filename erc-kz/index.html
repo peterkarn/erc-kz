@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Город ЕРЦ</title>
+  <meta name="description" content="ЕРК">
+  <meta name="keywords" content="оплата, услуги, коммуналка">
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OG Tags -->
+  <meta property="og:title" content="оплата, услуги, коммуналка">
+  <meta property="og:description" content="оплата, услуги, коммуналка">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="img/content/logo.svg">
+  <meta property="og:site_name" content="Город ЕРЦ">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+        <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo logo">
+            <img src="img/content/logo.svg" alt="Город ЕРЦ">
+          </a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a href="#" class="menu__link">
+                  <img src="img/icons/rus.svg" alt="Русский">
+                </a>
+                <span class="menu__arrow arrow"></span>
+                <ul class="sub-menu__list sub-menu__list_lang">
+                  <li>
+                    <a href="#" class="sub-menu__link">
+                      <img src="img/icons/kz.svg" alt="Казахский">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">
+                      <img src="img/icons/kz.svg" alt="Казахский">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">
+                      <img src="img/icons/kz.svg" alt="Казахский">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__link">Костанай</a>
+                <span class="menu__arrow arrow"></span>
+                <ul class="sub-menu__list">
+                  <li>
+                    <a href="#" class="sub-menu__link">Пункт подменю 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">Пункт подменю 2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">Пункт подменю 3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">Пункт подменю 4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-menu__link">Пункт подменю 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__link">Как платить</a>
+              </li>
+              <li>
+                <a href="departaments.html" class="menu__link">Отделения</a>
+              </li>
+              <li>
+                <a href="#" class="menu__link">О нас</a>
+              </li>
+            </ul>
+            <a href="#" class="header__cabinet cabinet btn-primary">
+              <div class="cabinet__icon">
+                <img src="img/icons/login.svg" alt="">
+              </div>
+              <span class="cabinet__text">
+                Личный кабинет
+              </span>
+            </a>
+          </nav>
+           <button class="menu-icon">
+              <img src="img/icons/menu.svg" alt="Menu icon">
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <main class="main main-page">
+      <section class="offer">
+        <div class="container offer__inner">
+          <div class="offer__text">
+            <h1 class="offer__title">
+              Оплачивайте все коммунальные услуги по одному счету в несколько кликов!
+            </h1>
+            <p class="offer__subtitle">
+              Город ЕРЦ – теперь оплачивать коммуналку по-настоящему удобно
+            </p>
+            <button data-target="simpleModal_1" data-toggle="modal" class="offer__btn btn-primary">
+              Начать
+            </button>
+          </div>
+          <div class="offer__actions actions-offer">
+            <ul class="actions-offer__list">
+              <li>
+                <img src="img/icons/water.svg" alt="" class="actions-offer__icon">
+                <span class="actions-offer__text">Вода</span>
+                <span class="actions-offer__value tng">300</span>
+              </li>
+              <li>
+                <img src="img/icons/heat.svg" alt="" class="actions-offer__icon">
+                <span class="actions-offer__text">Отопление</span>
+                <span class="actions-offer__value tng">200</span>
+              </li>
+              <li>
+                <img src="img/icons/energy.svg" alt="" class="actions-offer__icon">
+                <span class="actions-offer__text">Электроэнергия</span>
+                <span class="actions-offer__value tng">400</span>
+              </li>
+            </ul>
+            <div class="actions-offer__sum">
+              <span class="actions-offer__amount">
+                Итого
+              </span>
+              <span class="actions-offer__price tng">
+                900
+              </span>
+            </div>
+            <a href="#" class="actions-offer__payall btn-secondary">
+              <span>Оплатить все сразу</span>
+              <img src="img/icons/mark.svg" alt="Иконка подтверждения">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="benefits page-section">
+        <div class="container">
+          <h2 class="benefits__title section-title">
+            С нами все быстро, просто и удобно!
+          </h2>
+          <!-- Slider main container -->
+          <div class="swiper-container benefits__mobile">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper benefits__slider-wrapper">
+              <!-- Slides -->
+              <ul class="swiper-slide benefits__list benefits__list_mobile">
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/1.svg" alt="Оплата">
+                  </div>
+                  <p class="benefits__descr">
+                    Оплата всех коммунальных услуг в одном счете всего в несколько кликов
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/2.svg" alt="Без очереди">
+                  </div>
+                  <p class="benefits__descr">
+                    Без простоя в очереди, траты нервов и времени на дорогу. Займитесь тем, что по-настоящему важно
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/3.svg" alt="Информация">
+                  </div>
+                  <p class="benefits__descr">
+                    Детальная информация по каждому счету есть в личном кабинете, а квитанции можно скачать
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/4.svg" alt="Настройка">
+                  </div>
+                  <p class="benefits__descr">
+                    Возможность самостоятельно настраивать платежи – выбирайте, что вы будете оплачивать
+                  </p>
+                </li>
+              </ul>
+              <ul class="swiper-slide benefits__list benefits__list_mobile">
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/5.svg" alt="Редкие услуги">
+                  </div>
+                  <p class="benefits__descr">
+                    Редкие услуги, которые вы не оплатите в другом месте! Да, здесь вы сможете оплатить даже гараж
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/6.svg" alt="Личный кабинет">
+                  </div>
+                  <p class="benefits__descr">
+                    Оплата через личный кабинет на сайте или приложение вашего банка
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/7.svg" alt="Комиссия">
+                  </div>
+                  <p class="benefits__descr">
+                    Средняя комиссия при оплате всех счетов всего 190 ТГ – дешевле пакета молока!
+                  </p>
+                </li>
+                <li>
+                  <div class="benefits__icon">
+                    <img src="img/icons/benefits/8.svg" alt="Бонусы">
+                  </div>
+                  <p class="benefits__descr">
+                    При оплате в приложении Kaspi вы получите бонусы от банка
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-pagination benefits__mobile-pagination"></div>
+          </div>
+          <div class="benefits__desktop">
+            <ul class="benefits__list benefits__list_desktop">
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/1.svg" alt="Оплата">
+                </div>
+                <p class="benefits__descr">
+                  Оплата всех коммунальных услуг в одном счете всего в несколько кликов
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/2.svg" alt="Без очереди">
+                </div>
+                <p class="benefits__descr">
+                  Без простоя в очереди, траты нервов и времени на дорогу. Займитесь тем, что по-настоящему важно
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/3.svg" alt="Информация">
+                </div>
+                <p class="benefits__descr">
+                  Детальная информация по каждому счету есть в личном кабинете, а квитанции можно скачать
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/4.svg" alt="Настройка">
+                </div>
+                <p class="benefits__descr">
+                  Возможность самостоятельно настраивать платежи – выбирайте, что вы будете оплачивать
+                </p>
+              </li>
+            </ul>
+            <ul class="benefits__list benefits__list_desktop">
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/5.svg" alt="Редкие услуги">
+                </div>
+                <p class="benefits__descr">
+                  Редкие услуги, которые вы не оплатите в другом месте! Да, здесь вы сможете оплатить даже гараж
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/6.svg" alt="Личный кабинет">
+                </div>
+                <p class="benefits__descr">
+                  Оплата через личный кабинет на сайте или приложение вашего банка
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/7.svg" alt="Комиссия">
+                </div>
+                <p class="benefits__descr">
+                  Средняя комиссия при оплате всех счетов всего 190 ТГ – дешевле пакета молока!
+                </p>
+              </li>
+              <li>
+                <div class="benefits__icon">
+                  <img src="img/icons/benefits/8.svg" alt="Бонусы">
+                </div>
+                <p class="benefits__descr">
+                  При оплате в приложении Kaspi вы получите бонусы от банка
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="begin page-section">
+        <div class="container">
+          <p class="begin__suptitle">
+            Сократите рутину. На оплату счетов можно тратить не пол часа, а несколько минут.
+          </p>
+          <h2 class="begin__title section-title">
+            Как начать? 2 простых шага
+          </h2>
+          <ul class="begin__steps steps">
+            <li>
+              <span class="steps__number">
+                1
+              </span>
+              <div class="steps__body">
+                <p class="steps__text">
+                  Узнайте свой лицевой счет
+                </p>
+                <button class="steps__btn btn-secondary">
+                  <img src="img/icons/bubble.svg" alt="Иконка">
+                  <span>Узнать</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <span class="steps__number">
+                2
+              </span>
+              <div class="steps__body">
+                <p class="steps__text">
+                  Зарегистрируйтесь и оплатите все коммунальные услуги по одному лицевому счету удобным способом
+                </p>
+                <div class="steps__row">
+                  <a href="#" class="cabinet btn-primary steps__btn">
+                    <div class="cabinet__icon">
+                      <img src="img/icons/login.svg" alt="Логин">
+                    </div>
+                    <span class="cabinet__text">
+                      Личный кабинет
+                    </span>
+                  </a>
+                  <span class="steps__or"> или </span>
+                  <button class="steps__button button-steps">
+                    <div class="button-steps__img">
+                      <img src="img/content/banks/1.png" alt="Логотип банка">
+                    </div>
+                    <p>и еще 8 банков </p>
+                    <img class="button-steps__carette" src="img/icons/carette.svg" aria-hidden="true">
+                  </button>
+                  <ul class="steps__banks">
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/2.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/3.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/4.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/5.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/6.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/7.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/8.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/9.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/content/banks/10.png" alt="Логотип банка">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="howto page-section">
+        <div class="container shrink-container">
+          <h2 class="section-title">
+            Как это работает?
+          </h2>
+          <div class="howto__text shrink-text">
+            <p>
+              Все очень просто. Мы просто привязываем все платежи, которые числятся за вашей квартирой к вашему лицевому
+              счету. Поэтому у нас вы можете оплатить все, до таких мелочей, как гараж. Не хотите платить за гараж? В
+              настройках вы можете исключить его из квитанции. Хотите посмотреть задолженность или переплату? Вы легко
+              можете это сделать. Предпочитаете хранить квитанции или их просит владелец квартиры? Их можно скачать в
+              личном кабинете и отправить ему.
+            </p>
+            <p>
+              94% опрошенных нами клиентов отвечают, что оплачивают все коммунальные услуги у нас потому, что это
+              удобно. Проверьте сами и вы больше не будете оплачивать счета по-другому.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="stats page-section">
+        <div class="container">
+          <h2 class="section-title stats__title">
+            Мы в цифрах
+          </h2>
+          <div class="stats__inner">
+            <div class="stats__item">
+              <div class="stats__number">
+                53 600
+              </div>
+              <span class="stats__text">клиентов с нами</span>
+            </div>
+            <div class="stats__item">
+              <div class="stats__number">
+                530
+              </div>
+              <span class="stats__text">квартир оплачено вчера</span>
+            </div>
+            <div class="stats__item">
+              <div class="stats__number">
+                190 <span> ТГ</span> 
+              </div>
+              <span class="stats__text">средняя комиссия</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about page-section">
+        <div class="container shrink-container">
+          <h2 class="section-title">
+            О нас
+          </h2>
+          <div class="about__text shrink-text">
+            <p>
+              Наша история началась в 2014 году в Рудном. Нам просто надоели бесконечные очереди в разные окна, которые
+              приходилось отстаивать раз в месяц каждому жителю города, просто чтобы оплатить все коммунальные услуги.
+              Мы хотели облегчить жизнь каждому, поэтому создали только одну кассу и одну квитанцию для оплаты всех
+              счетов. Как видите, наша система понравилась горожанам и жителям еще 4 городов области. С тех пор очередей
+              у касс стало меньше, но они перешли в онлайн. </p>
+            <p>
+              Но зачем оплачивать все услуги по отдельности каждой организации, если можно оплатить все услуги махом за
+              несколько кликов? Мы тоже этого не понимаем, поэтому оплатить все счета можно на нашем сайте не выходя из
+              дома и не открывая по отдельности вкладку каждого оператора в своем банковском приложении. </p>
+          </div>
+        </div>
+      </section>
+      <section class="contacts page-section">
+        <div class="container">
+          <h2 class="section-title">
+            Связаться с нами
+          </h2>
+          <div class="contacts__inner">
+            <div class="contacts__col">
+              <h3 class="contacts__line">
+                Офис
+              </h3>
+              <a href="#" class="contacts__descr">
+                г. Костанай ул. Касымханова 114 - 301А
+              </a>
+              <h3 class="contacts__line">
+                Телефон
+              </h3>
+              <a href="tel: +77143139073" class="contacts__descr">
+               +7 714 313 90 73
+              </a>
+              <ul class="btns contacts__btns">
+                <li>
+                  <a class="btns__item btns__item_whatsapp" href="#">
+                    <span class="btns__text">Whatsapp</span>
+                    <div class="btns__icon">
+                      <img src="img/icons/whatsapp.svg" alt="Whatsapp">
+                    </div>
+                  </a>
+                </li>
+                 <li>
+                  <a class="btns__item btns__item_telegram" href="#">
+                    <span class="btns__text">Телеграм</span>
+                    <div class="btns__icon">
+                      <img src="img/icons/telegram.svg" alt="telegram">
+                    </div>
+                  </a>
+                </li>
+                 <li>
+                  <a class="btns__item btns__item_mail" href="#">
+                    <span class="btns__text">Написать на почту</span>
+                    <div class="btns__icon">
+                      <img src="img/icons/mail.svg" alt="mail">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+             <div class="contacts__col">
+              <iframe class="map contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e26abb05399397bb1c114daf951e6d369aac68bac2a4d5a8c82348d8465f16d&amp;source=constructor" loading="lazy" width="836" height="354" frameborder="0"></iframe>
+             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-section">
+  <div class="container footer__inner">
+    <div class="footer__col footer__col_first">
+      <a href="#" class="logo footer__logo">
+        <img src="img/content/logo-footer.svg" alt="Логотип">
+      </a>
+      <p class="footer__paragraph">
+        Платежная организация: <br> <b>ТОО "ЭНЕРГИЯРК РУДНЫЙ"</b>
+      </p>
+      <p class="footer__paragraph">
+        Номер платежной организации: 10-17-021
+      </p>
+    </div>
+    <div class="footer__col footer__col_app app">
+      <div class="app__img _ibg">
+        <img src="img/icons/app.svg" alt="Иконка приложения для android">
+      </div>
+      <div class="app__text">
+        Загрузи приложение на Android и оплачивай все услуги с телефона
+      </div>
+      <a class="app__link _ibg" href="#">
+        <img src="img/icons/google_play.svg" alt="Ссылка на google play">
+      </a>
+    </div>
+    <ul class="footer__list">
+      <li>
+        <a href="#">Публичный Договор</a>
+      </li>
+      <li>
+        <a href="comission.html">Комиссия</a>
+      </li>
+      <li>
+        <a href="#">Отмена платежа</a>
+      </li>
+      <li>
+        <a href="prices.html">Тарифы</a>
+      </li>
+      <li>
+        <a href="departaments.html">Услугодатели</a>
+      </li>
+      <li>
+        <a href="rules.html">Правила деятельности ПО</a>
+      </li>
+      <li>
+        <a href="#">Кабинет Услугодателя</a>
+      </li>
+    </ul>
+    <ul class="btns footer__btns">
+       <li>
+        <a class="btns__item btns__item_mail" href="#">
+          <span class="btns__text">Написать на почту</span>
+          <div class="btns__icon">
+            <img src="img/icons/mail.svg" alt="mail">
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="btns__item btns__item_whatsapp" href="#">
+          <span class="btns__text">Whatsapp</span>
+          <div class="btns__icon">
+            <img src="img/icons/whatsapp.svg" alt="Whatsapp">
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="btns__item btns__item_telegram" href="#">
+          <span class="btns__text">Телеграм</span>
+          <div class="btns__icon">
+            <img src="img/icons/telegram.svg" alt="telegram">
+          </div>
+        </a>
+      </li>
+    </ul>
+    <ul class="social footer__social">
+      <li>
+      <a class="_ibg" href="#" target="_blank">
+        <img src="img/icons/vk.svg" alt="Вконтакте">
+      </a>
+    </li>
+      <li>
+      <a class="_ibg" href="#" target="_blank">
+        <img src="img/icons/ok.svg" alt="Одноклассники">
+      </a>
+    </li>
+      <li>
+      <a class="_ibg" href="#" target="_blank">
+        <img src="img/icons/instagram.svg" alt="Instagram">
+      </a>
+    </li>
+    </ul>
+  </div>
+</footer>
+    <div id="simpleModal_1" class="modal">
+    <div class="modal-window">
+      <span class="close" data-dismiss="modal">&times;</span>
+        <form class="form" action="#">
+          <h4 class="form__title">
+              Узнать лицевой счет
+          </h4>
+          <label class="form__label verified">
+            <span>Укажите свой адрес</span> 
+            <input class="form__field" type="text" name="city" placeholder="Город">
+          </label>
+          <label class="form__label error">
+            <input class="form__field" type="text" name="street" placeholder="Улица">
+          </label>
+          <label class="form__label">
+            <input class="form__field" type="text" name="house" placeholder="Дом">
+          </label>
+          <label class="form__label">
+            <input class="form__field" type="text" name="dep" placeholder="Квартира">
+          </label>
+          <p class="form__message">
+            Неверно указана улица
+          </p>
+          <button class="btn-secondary form__btn" type="submit">
+            Узнать
+          </button>
+        </form>
+    </div>
+     <div class="modal-window">
+      <span class="close" data-dismiss="modal">&times;</span>
+        <div class="form">
+          <h4 class="form__title">
+              Узнать лицевой счет
+          </h4>
+          <label class="form__label">
+            <span>Ваш лицевой счет:</span> 
+            <p class="form__field">1257 9554 1325 4232</p>
+          </label>
+          <button class="btn-secondary form__btn">
+            Скопировать
+          </button>
+        </div>
+    </div>
+</div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Комиссия | Город ЕРЦ</title>
+  <meta name="description" content="ЕРЦ">
+  <meta name="keywords" content="оплата, услуги, коммуналка">
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OG Tags -->
+  <meta property="og:title" content="оплата, услуги, коммуналка">
+  <meta property="og:description" content="оплата, услуги, коммуналка">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="img/content/logo.svg">
+  <meta property="og:site_name" content="Город ЕРЦ">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+  @@include('_header.html')
+  <main class="main comission">
+    <section class="inner-page-section page-topline prices__topline">
+      <div class="container">
+        <h2 class="section-title title-slim page-topline__title">
+          Комиссия
+        </h2>
+        <form action="#" class="page-topline__form form-top">
+          <select class="form-top__select" name="service">
+            <option class="form-top__option" value="Верхняя комиссия">Верхняя комиссия</option>
+            <option class="form-top__option" value="Верхняя комиссия">Верхняя комиссия</option>
+            <option class="form-top__option" value="Верхняя комиссия">Верхняя комиссия</option>
+            <option class="form-top__option" value="Верхняя комиссия">Верхняя комиссия</option>
+            <option class="form-top__option" value="Верхняя комиссия">Верхняя комиссия</option>
+          </select>
+          <label class="form-top__field">
+            <input type="search" placeholder="Поиск">
+          </label>
+          <button class="form-top__submit btn-secondary" type="submit">Поиск</button>
+        </form>
+        <!-- table -->
+        <div class="table table-3col table-3col_shifted">
+          <div class="table__body">
+            <!-- table header -->
+            <div class="table__header table-3col__header">
+              <div class="table__header-cell table__header-cell_sort">
+               <span>Услугодатель</span>
+               <button class="sort table-3col__sort">
+               </button>
+              </div>
+              <div class="table__header-cell table__header-cell_sort">
+               <span>Сумма платежа</span> 
+               <button class="sort table-3col__sort">
+               </button>
+              </div>
+               <div class="table__header-cell table__header-cell_sort">
+               <span>Комиссия</span> 
+               <button class="sort table-3col__sort">
+               </button>
+              </div>
+            </div>
+            <!-- table rows -->
+            <div class="table__row table-3col__row">
+              <div class="table__header-cell">
+                Ясли-сад №14 г.Костанай
+              </div>
+              <div class="table__header-cell">
+               От 0 до 999 999 тг
+              </div>
+              <div class="table__header-cell">
+                0.5% мин 120 тг 	
+              </div>
+            </div>
+             <!-- table rows end -->
+          </div>
+        </div>
+        <!-- table end -->
+      </div>
+    </section>
+  </main>
+  @@include('_footer.html')
+  <script src="js/script.js"></script>
+</body>
+
+</html>

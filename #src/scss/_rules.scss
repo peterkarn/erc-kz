@@ -1,0 +1,177 @@
+.rules {
+
+  &__inner {
+    position: relative;
+    display: flex;
+  }
+
+  // .rules__nav
+
+  &__nav {
+    position: relative;
+    flex: 0 0 vw(275);
+    overflow: auto;
+    background-color: $main-g;
+
+    ul {
+      padding-right: 1em;
+      font-weight: 300;
+      font-size: vw(14);
+      line-height: 1.3em;
+
+
+      li {
+        margin-bottom: vw(13);
+
+        @media screen and (min-width: $large) {
+          margin-bottom: 13px;
+        }
+
+        @media screen and (max-width: $medium) {
+          margin-bottom: vmin(13);
+        }
+
+        a.active {
+          font-weight: 700;
+        }
+      }
+
+      @media screen and (min-width: $large) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $medium) {
+        margin-bottom: vmin(60);
+        padding: vmin(26) vmin(23);
+        font-size: vmin(14);
+      }
+
+      &.fixed {
+        max-width: vw(277);
+
+        @media screen and (min-width: 1025px) {
+          position: fixed;
+        }
+
+        @media screen and (min-width: $large) {
+          max-width: 277px;
+        }
+
+        @media screen and (max-width: $medium) {
+          max-width: 100%;
+        }
+      }
+
+      &.absolute {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $large) {
+      flex: 0 0 275px;
+    }
+
+    @media screen and (max-width: $medium) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: none;
+      flex: auto;
+
+      &.visible {
+        display: block;
+      }
+    }
+
+  }
+
+  // .rules__description
+
+  &__description {
+    margin-left: vw(20);
+    border-radius: 3px;
+    padding: vw(27);
+    box-shadow: 0 0 vw(30) rgba(1, 1, 1, 0.1);
+    background-color: #fff;
+
+    @media screen and (min-width: $large) {
+      margin-left: 20px;
+      padding: 27px;
+      box-shadow: 0 0 30px rgba(1, 1, 1, 0.1);
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-left: 0;
+      padding: vmin(27);
+      box-shadow: 0 0 vmin(30) rgba(1, 1, 1, 0.1);
+    }
+  }
+
+  // .rules__item
+
+  &__item {
+    margin-bottom: vw(37);
+
+    @media screen and (min-width: $large) {
+      margin-bottom: 37px;
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-bottom: vmin(37);
+    }
+  }
+
+  // .rules__title
+
+  &__title {
+    margin-bottom: vw(20);
+
+    @media screen and (min-width: $large) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $medium) {
+      margin-bottom: vmin(20);
+    }
+  }
+
+  // .rules__text
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+
+  // .rules__show-naw
+
+  &__show-naw {
+    display: none;
+    transition: all 1s;
+
+    @media screen and (max-width: $medium) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: vmin(60);
+      font-size: vmin(16);
+      background: rgba($main-g, 0.8);
+      filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.2));
+
+      &.hidden {
+        height: 0;
+        opacity: 0;
+        transition: all 1s;
+      }
+    }
+  }
+}
